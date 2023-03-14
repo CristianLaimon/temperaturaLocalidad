@@ -13,10 +13,9 @@ namespace RegistroDeTemperaturas
 
         public void Mostrar(DataGridView datagridview)
         {
-            datagridview.RowCount = 0;
+            datagridview.RowCount = 1;
             foreach (Temperatura temp in lista)
-                datagridview.Rows.Add(temp.Localidad ,temp.Mes, temp.Dia, temp.TemperaturaMaxima, temp.TemperaturaMinima);
-            
+                datagridview.Rows.Add(temp.Localidad.NombreMunicipio, temp.Localidad.NombreLocalidad ,temp.Mes, temp.Dia, temp.TemperaturaMaxima, temp.TemperaturaMinima);
         }
         
         public void Agregar(string m, int d, int tM, int tm, string nM, string nL)
@@ -24,9 +23,10 @@ namespace RegistroDeTemperaturas
             lista.Add(new Temperatura(m, d, tM, tm, new Localidad(nM, nL)));
         }
 
-        public void Eliminar(int indice)
+        public void Eliminar(int indice, DataGridView datagridview)
         {
             lista.RemoveAt(indice);
+            datagridview.Rows.RemoveAt(indice);
         }
     }
 }
