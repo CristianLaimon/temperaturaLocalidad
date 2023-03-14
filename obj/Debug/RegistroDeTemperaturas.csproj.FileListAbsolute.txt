@@ -1,0 +1,11 @@
+C:\Users\asus\source\repos\RegistroDeTemperaturas\bin\Debug\RegistroDeTemperaturas.exe.config
+C:\Users\asus\source\repos\RegistroDeTemperaturas\bin\Debug\RegistroDeTemperaturas.exe
+C:\Users\asus\source\repos\RegistroDeTemperaturas\bin\Debug\RegistroDeTemperaturas.pdb
+C:\Users\asus\source\repos\RegistroDeTemperaturas\obj\Debug\RegistroDeTemperaturas.csproj.AssemblyReference.cache
+C:\Users\asus\source\repos\RegistroDeTemperaturas\obj\Debug\RegistroDeTemperaturas.csproj.SuggestedBindingRedirects.cache
+C:\Users\asus\source\repos\RegistroDeTemperaturas\obj\Debug\RegistroDeTemperaturas.Form1.resources
+C:\Users\asus\source\repos\RegistroDeTemperaturas\obj\Debug\RegistroDeTemperaturas.Properties.Resources.resources
+C:\Users\asus\source\repos\RegistroDeTemperaturas\obj\Debug\RegistroDeTemperaturas.csproj.GenerateResource.cache
+C:\Users\asus\source\repos\RegistroDeTemperaturas\obj\Debug\RegistroDeTemperaturas.csproj.CoreCompileInputs.cache
+C:\Users\asus\source\repos\RegistroDeTemperaturas\obj\Debug\RegistroDeTemperaturas.exe
+C:\Users\asus\source\repos\RegistroDeTemperaturas\obj\Debug\RegistroDeTemperaturas.pdb

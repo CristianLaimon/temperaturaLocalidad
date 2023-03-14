@@ -4,24 +4,26 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace temperaturaLocalidad
+namespace RegistroDeTemperaturas
 {
     internal class Localidad
     {
-        private string nomMunicipio;
-        private string nombre;
+        private string nombreMunicipio;
+        private string nombreLocalidad;
+
+       public Localidad()
+        {
+            nombreMunicipio = "";
+            nombreLocalidad = "";
+        }
         
-
-        public Localidad()
+        public Localidad(string nM, string nL)
         {
-            nomMunicipio = string.Empty;
-            nombre = string.Empty;
+            nombreMunicipio = nM;
+            nombreLocalidad = nL;
         }
 
-        public Localidad(string nomMunicipio, string nombre)
-        {
-            this.nomMunicipio = nomMunicipio;
-            this.nombre = nombre;
-        }
+        public string NombreMunicipio { get => nombreMunicipio; set => nombreMunicipio = value; }
+        public string NombreLocalidad { get => nombreLocalidad; set => nombreLocalidad = value; }
     }
 }
