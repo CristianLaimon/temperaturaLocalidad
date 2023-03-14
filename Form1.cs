@@ -32,31 +32,27 @@ namespace RegistroDeTemperaturas
 
         private void button1_Click(object sender, EventArgs e)
         {
-            int d;
-            double tMaxima, tMinima, promedio;
-            string m, nM, nL;
-            nM = comboBox1.Text;
-            nL = comboBox2.Text;
-            m = comboBox3.Text;
-            d = (int)numericUpDown2.Value;
-            tM = (double)numericUpDown3.Value;
-            tm = (double)numericUpDown4.Value;
-            operaciones.Agregar(m, d, tM, tm, nM, nL);
-            operaciones.Agregar(m, d, tM, tm, nM, nL);
+            operaciones.Agregar(comboMes.Text, (int)numDia.Value, (double)numTMax.Value, (double)numTMin.Value, comboMunicipio.Text, comboLocalidad.Text);
             operaciones.Mostrar(dataGridView1);
-            comboBox1.Text = "";
-            comboBox2.Text = "";
-            comboBox3.Text = "";
-            numericUpDown2.Value = 0;
-            numericUpDown3.Value = 0;
-            numericUpDown4.Value = 0;
+            RestablecerFormulario();
+
+        }
+
+        private void RestablecerFormulario()
+        {
+            comboMunicipio.Text = "";
+            comboLocalidad.Text = "";
+            comboMes.Text = "";
+            numDia.Value = 0;
+            numTMax.Value = 0;
+            numTMin.Value = 0;
         }
 
         private void comboBox1_SelectedValueChanged(object sender, EventArgs e)
         {
-            string seleccion = comboBox1.Text;
+            string seleccion = comboMunicipio.Text;
 
-            comboBox2.Items.Clear();
+            comboLocalidad.Items.Clear();
 
             if (seleccion == "Comondú")
             {
@@ -87,51 +83,51 @@ namespace RegistroDeTemperaturas
 
         public void Comondu()
         {
-            comboBox2.Items.Add("Ciudad Constitución");
-            comboBox2.Items.Add("Ciudad Insurgentes");
-            comboBox2.Items.Add("Puerto San Carlos");
-            comboBox2.Items.Add("Ciudad Insurgentes");
-            comboBox2.Items.Add("Puerto Adolfo López Mateos");
-            comboBox2.Items.Add("Villa Ignacio Zaragoza");
-            comboBox2.Items.Add("Villa Morelos");
+            comboLocalidad.Items.Add("Ciudad Constitución");
+            comboLocalidad.Items.Add("Ciudad Insurgentes");
+            comboLocalidad.Items.Add("Puerto San Carlos");
+            comboLocalidad.Items.Add("Ciudad Insurgentes");
+            comboLocalidad.Items.Add("Puerto Adolfo López Mateos");
+            comboLocalidad.Items.Add("Villa Ignacio Zaragoza");
+            comboLocalidad.Items.Add("Villa Morelos");
 
         }
         public void Mulege()
         {
-            comboBox2.Items.Add("Santa Rosalía");
-            comboBox2.Items.Add("Guerrero Negro");
-            comboBox2.Items.Add("Villa Alberto Andrés Alvarado Arámburo");
-            comboBox2.Items.Add("Heroica Mulegé");
-            comboBox2.Items.Add("Bahía Tortugas");
-            comboBox2.Items.Add("San Francisco");
-            comboBox2.Items.Add("Bahía Asunción");
-            comboBox2.Items.Add("Las Margaritas");
-            comboBox2.Items.Add("Estero de la Bocana");
+            comboLocalidad.Items.Add("Santa Rosalía");
+            comboLocalidad.Items.Add("Guerrero Negro");
+            comboLocalidad.Items.Add("Villa Alberto Andrés Alvarado Arámburo");
+            comboLocalidad.Items.Add("Heroica Mulegé");
+            comboLocalidad.Items.Add("Bahía Tortugas");
+            comboLocalidad.Items.Add("San Francisco");
+            comboLocalidad.Items.Add("Bahía Asunción");
+            comboLocalidad.Items.Add("Las Margaritas");
+            comboLocalidad.Items.Add("Estero de la Bocana");
         }
 
         public void LaPaz()
         {
-            comboBox2.Items.Add("La Paz");
-            comboBox2.Items.Add("Todos Santos");
-            comboBox2.Items.Add("El Centenario");
-            comboBox2.Items.Add("Chametla");
-            comboBox2.Items.Add("Melitón Albáñez Domínguez");
-            comboBox2.Items.Add("Los Barriles");
-            comboBox2.Items.Add("El sargento");
-            comboBox2.Items.Add("General Juan Domínguez Cota");
+            comboLocalidad.Items.Add("La Paz");
+            comboLocalidad.Items.Add("Todos Santos");
+            comboLocalidad.Items.Add("El Centenario");
+            comboLocalidad.Items.Add("Chametla");
+            comboLocalidad.Items.Add("Melitón Albáñez Domínguez");
+            comboLocalidad.Items.Add("Los Barriles");
+            comboLocalidad.Items.Add("El sargento");
+            comboLocalidad.Items.Add("General Juan Domínguez Cota");
         }
         public void LosCabos()
         {
-            comboBox2.Items.Add("Cabo San Lucas");
-            comboBox2.Items.Add("San José del Cabo");
-            comboBox2.Items.Add("El Centenario");
-            comboBox2.Items.Add("Miraflores");
+            comboLocalidad.Items.Add("Cabo San Lucas");
+            comboLocalidad.Items.Add("San José del Cabo");
+            comboLocalidad.Items.Add("El Centenario");
+            comboLocalidad.Items.Add("Miraflores");
 
         }
 
         public void Loreto()
         {
-            comboBox2.Items.Add("Loreto");
+            comboLocalidad.Items.Add("Loreto");
 
         }
 

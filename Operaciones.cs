@@ -13,9 +13,9 @@ namespace RegistroDeTemperaturas
 
         public void Mostrar(DataGridView datagridview)
         {
-            datagridview.RowCount = 1;
+            datagridview.RowCount = 0;
             foreach (Temperatura temp in lista)
-                datagridview.Rows.Add(temp.Localidad.NombreMunicipio, temp.Localidad.NombreLocalidad, temp.Mes, temp.Dia, temp.TemperaturaMaxima, temp.TemperaturaMinima, temp.Promedio);
+                datagridview.Rows.Add(temp.Localidad.NombreMunicipio, temp.Localidad.Nombre, temp.Mes, temp.Dia, temp.TemperaturaMaxima, temp.TemperaturaMinima, temp.Promedio);
         }
         
         public void Agregar(string mes, int dia, double tMax, double tMin, string nMunicipio, string nLocalidad)
