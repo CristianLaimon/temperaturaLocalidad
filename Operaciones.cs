@@ -36,5 +36,15 @@ namespace RegistroDeTemperaturas
             Lista.RemoveAt(indice);
             datagridview.Rows.RemoveAt(indice);
         }
+
+        public void PromedioMayor()
+        {
+
+        }
+
+        public void PromedioMenor()
+        {
+
+        }
     }
 }

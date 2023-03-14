@@ -35,7 +35,6 @@ namespace RegistroDeTemperaturas
             tm = (double)numericUpDown4.Value;
             p = (tM + tm) / 2;
             operaciones.Agregar(m, d, tM, tm, nM, nL, p);
-            
             operaciones.Mostrar(dataGridView1);
             comboBox1.Text = "";
             comboBox2.Text = "";
@@ -136,6 +135,58 @@ namespace RegistroDeTemperaturas
         private void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
         {
             i = e.RowIndex;
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            label7.Text = "";
+            label8.Text = "";
+            label9.Text = "";
+            label10.Text = "";
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            if (radioButton1.Checked == true)
+            {
+                double mayor = 0, menor = 0;
+
+                for (int i = 0; i < dataGridView1.Rows.Count; i++)
+                {
+                    menor =  (double)dataGridView1.Rows[1].Cells[6].Value;
+                    mayor = (double)dataGridView1.Rows[1].Cells[6].Value;
+                }
+                for (int i = 0; i < dataGridView1.Rows.Count; i++)
+                {
+                    if ((double)(dataGridView1.Rows[i].Cells[6].Value) > mayor)
+                    {
+                        mayor = (double)(dataGridView1.Rows[i].Cells[6].Value);
+                    }
+                    if ((double)(dataGridView1.Rows[i].Cells[6].Value) < menor)
+                    {
+                        menor = (double)(dataGridView1.Rows[i].Cells[6].Value);
+                    }
+                }
+                label7.Text = mayor.ToString();
+            }
+
+            if (radioButton2.Checked == true)
+            {
+
+            }
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            if (radioButton3.Checked == true)
+            {
+
+            }
+
+            if (radioButton4.Checked == true)
+            {
+
+            }
         }
     }
 }
