@@ -9,3 +9,5 @@ C:\Users\asus\source\repos\RegistroDeTemperaturas\obj\Debug\RegistroDeTemperatur
 C:\Users\asus\source\repos\RegistroDeTemperaturas\obj\Debug\RegistroDeTemperaturas.csproj.CoreCompileInputs.cache
 C:\Users\asus\source\repos\RegistroDeTemperaturas\obj\Debug\RegistroDeTemperaturas.exe
 C:\Users\asus\source\repos\RegistroDeTemperaturas\obj\Debug\RegistroDeTemperaturas.pdb
+C:\Users\itan_\Desktop\temperaturaLocalidad\obj\Debug\RegistroDeTemperaturas.exe
+C:\Users\itan_\Desktop\temperaturaLocalidad\obj\Debug\RegistroDeTemperaturas.pdb

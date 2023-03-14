@@ -18,12 +18,13 @@ namespace RegistroDeTemperaturas
             InitializeComponent();
         }
 
-        Operaciones operaciones = new Operaciones();
+        Operaciones operaciones = new Operaciones(); //Se creo un objeto para poder realizar sus funciones. No se utilizó propiedades y valores estáticos
 
         int i;
 
         private void Form1_Load(object sender, EventArgs e)
         {
+            
         }
 
         private void comboBox2_SelectedIndexChanged(object sender, EventArgs e)
