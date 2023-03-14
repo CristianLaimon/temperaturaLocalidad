@@ -25,13 +25,13 @@ namespace RegistroDeTemperaturas
             Promedio = 0;
         }
 
-        public Temperatura(string m, int d, double tM, double tm, Localidad loc)
+        public Temperatura(string mes, int dia, double tMax, double tMin, Localidad loc)
         {
             localidad = loc;
-            temperaturaMaxima = tM;
-            temperaturaMinima = tm;
-            dia = d;
-            mes = m;
+            temperaturaMaxima = tMin;
+            temperaturaMinima = tMax;
+            this.dia = dia;
+            this.mes = mes;
             Promedio = 0;
         }
 

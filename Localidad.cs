@@ -10,21 +10,21 @@ namespace RegistroDeTemperaturas
     internal class Localidad
     {
         private string nombreMunicipio;
-        private string nombreLocalidad;
+        private string nombre;
 
        public Localidad()
         {
             nombreMunicipio = "";
-            nombreLocalidad = "";
+            nombre = "";
         }
         
         public Localidad(string nM, string nL)
         {
             nombreMunicipio = nM;
-            nombreLocalidad = nL;
+            nombre = nL;
         }
 
         public string NombreMunicipio { get => nombreMunicipio; set => nombreMunicipio = value; }
-        public string NombreLocalidad { get => nombreLocalidad; set => nombreLocalidad = value; }
+        public string Nombre { get => nombre; set => nombre = value; }
     }
 }

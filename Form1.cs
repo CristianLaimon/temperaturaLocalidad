@@ -33,7 +33,7 @@ namespace RegistroDeTemperaturas
         private void button1_Click(object sender, EventArgs e)
         {
             int d;
-            double tM, tm, p;
+            double tMaxima, tMinima, promedio;
             string m, nM, nL;
             nM = comboBox1.Text;
             nL = comboBox2.Text;
