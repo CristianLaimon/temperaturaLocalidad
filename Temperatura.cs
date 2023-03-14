@@ -22,17 +22,17 @@ namespace RegistroDeTemperaturas
             temperaturaMinima = 0;
             dia = 0;
             mes = "";
-            Promedio = 0;
+            promedio = 0;
         }
 
-        public Temperatura(string m, int d, double tM, double tm, Localidad loc)
+        public Temperatura(string m, int d, double tM, double tm, Localidad loc, double p)
         {
             localidad = loc;
             temperaturaMaxima = tM;
             temperaturaMinima = tm;
             dia = d;
             mes = m;
-            Promedio = 0;
+            promedio = p;
         }
 
         internal Localidad Localidad { get => localidad; set => localidad = value; }

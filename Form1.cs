@@ -22,14 +22,6 @@ namespace RegistroDeTemperaturas
 
         int i;
 
-        private void Form1_Load(object sender, EventArgs e)
-        {
-        }
-
-        private void comboBox2_SelectedIndexChanged(object sender, EventArgs e)
-        {
-        }
-
         private void button1_Click(object sender, EventArgs e)
         {
             int d;
@@ -41,8 +33,9 @@ namespace RegistroDeTemperaturas
             d = (int)numericUpDown2.Value;
             tM = (double)numericUpDown3.Value;
             tm = (double)numericUpDown4.Value;
-            operaciones.Agregar(m, d, tM, tm, nM, nL);
-            operaciones.Agregar(m, d, tM, tm, nM, nL);
+            p = (tM + tm) / 2;
+            operaciones.Agregar(m, d, tM, tm, nM, nL, p);
+            
             operaciones.Mostrar(dataGridView1);
             comboBox1.Text = "";
             comboBox2.Text = "";
