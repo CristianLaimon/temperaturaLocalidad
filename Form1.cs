@@ -32,14 +32,16 @@ namespace RegistroDeTemperaturas
 
         private void button1_Click(object sender, EventArgs e)
         {
-            int d, tM, tm;
+            int d;
+            double tM, tm, p;
             string m, nM, nL;
             nM = comboBox1.Text;
             nL = comboBox2.Text;
             m = comboBox3.Text;
             d = (int)numericUpDown2.Value;
-            tM = (int)numericUpDown3.Value;
-            tm = (int)numericUpDown4.Value;
+            tM = (double)numericUpDown3.Value;
+            tm = (double)numericUpDown4.Value;
+            operaciones.Agregar(m, d, tM, tm, nM, nL);
             operaciones.Agregar(m, d, tM, tm, nM, nL);
             operaciones.Mostrar(dataGridView1);
             comboBox1.Text = "";
