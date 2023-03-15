@@ -29,7 +29,14 @@ namespace RegistroDeTemperaturas
         
         public void Agregar(string m, int d, double tM, double tm, string nM, string nL, double p)
         {
-            Lista.Add(new Temperatura(m, d, tM, tm, new Localidad(nM, nL), p));
+            if (m == "" || d == 0 || tM == 0 || tm == 0 || nM == "" || nL == "" || p == 0)
+            {
+                MessageBox.Show("Faltan campos por completar", "Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
+            else
+            {
+                Lista.Add(new Temperatura(m, d, tM, tm, new Localidad(nM, nL), p));
+            }
         }
 
         public void Eliminar(int indice, DataGridView datagridview)
@@ -47,14 +54,7 @@ namespace RegistroDeTemperaturas
         {
 
         }
-        //Para hacer pruebas
-        public void RellenarTablaTesting()
-        {
-            lista.Add(new Temperatura("Enero", 2, 35, 10, new Localidad("Loreto", "Loreto"), 0));
-            lista.Add(new Temperatura("Febrero", 10, 20, 1, new Localidad("La Paz", "El Centenario"), 0));
-            lista.Add(new Temperatura("Marzo", 12, 10, -10, new Localidad("Comondú", "Ciudad Constitución"), 0));
-            lista.Add(new Temperatura("Diciembre", 15, 15, 3, new Localidad("Loreto", "Loreto"), 0));
 
-        }
+  
     }
 }

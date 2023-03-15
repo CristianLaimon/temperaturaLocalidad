@@ -18,11 +18,10 @@ namespace RegistroDeTemperaturas
         public Form1()
         {
             InitializeComponent();
-            operaciones.RellenarTablaTesting();
-            operaciones.Mostrar(dataGridView1);
         }
 
         Operaciones operaciones = new Operaciones();
+        
 
         int i;
 
@@ -134,6 +133,20 @@ namespace RegistroDeTemperaturas
         private void button2_Click(object sender, EventArgs e)
         {
             operaciones.Eliminar(i, dataGridView1);
+            if(dataGridView1.Rows.Count == -1)
+            {
+                button2.Enabled = false;
+                button3.Enabled = false;
+                button4.Enabled = false;
+                button5.Enabled = false;
+            }
+            else
+            {
+                button2.Enabled = true;
+                button3.Enabled = true;
+                button4.Enabled = true;
+                button5.Enabled = true;
+            }
         }
 
         private void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
@@ -143,7 +156,6 @@ namespace RegistroDeTemperaturas
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            operaciones.RellenarTablaTesting();
             label14.Text = "";
             label7.Text = "";
             label8.Text = "";
@@ -153,31 +165,31 @@ namespace RegistroDeTemperaturas
 
         private void button3_Click(object sender, EventArgs e)
         {
-            double promedio = 0;
+            double promedios = 0;
 
             if (radioButton1.Checked == true)
             {
-                for(int k = 0; i < dataGridView1.Rows.Count-1; k++)
+                for(int k = 0; k < dataGridView1.Rows.Count-1; k++)
                 {
-                    promedio += (double)dataGridView1.Rows[k].Cells[4].Value;
+                    promedios += (double)dataGridView1.Rows[k].Cells[4].Value;
                 }
-                promedio/= dataGridView1.Rows.Count-1;
+                promedios/= dataGridView1.Rows.Count-1;
                 
-                label7.Text = promedio.ToString();
+                label7.Text = promedios.ToString();
             }
+            radioButton1.Checked = false;
 
             if (radioButton2.Checked == true)
             {
-                for (int k = 0; i < dataGridView1.Rows.Count - 1; k++)
+                for (int k = 0; k < dataGridView1.Rows.Count - 1; k++)
                 {
-                    promedio += (double)dataGridView1.Rows[k].Cells[5].Value;
+                    promedios += (double)dataGridView1.Rows[k].Cells[5].Value;
                 }
-                promedio/= dataGridView1.Rows.Count-1;
-                label8.Text = promedio.ToString();
+                promedios/= dataGridView1.Rows.Count-1;
+                label8.Text = promedios.ToString();
             }
+            radioButton2.Checked = false;
         }
-
-
 
         private void button4_Click(object sender, EventArgs e)
         {
@@ -205,6 +217,7 @@ namespace RegistroDeTemperaturas
                     }
                 }
             }
+            radioButton3.Checked = false;
 
             if (radioButton4.Checked == true)
             {
@@ -230,19 +243,24 @@ namespace RegistroDeTemperaturas
                     }
                 }
             }
+            radioButton4.Checked = false;
         }
 
         private void button5_Click(object sender, EventArgs e)
         {
             string mes = comboBox4.Text;
             int dia = (int)numericUpDown1.Value;
-            for (int d = 0; d < dataGridView1.Rows.Count -1; d++)
+            for (int d = 0; d < dataGridView1.Rows.Count - 1; d++)
             {
                 if (mes == (string)dataGridView1.Rows[d].Cells[2].Value && dia == (int)dataGridView1.Rows[d].Cells[3].Value)
                 {
                     label14.Text = dataGridView1.Rows[d].Cells[6].Value.ToString();
                 }
             }
+            comboBox4.Text = "";
+            numericUpDown1.Value = 0;
+
+            
         }
     }
 }
