@@ -35,26 +35,28 @@ namespace RegistroDeTemperaturas
             }
             else
             {
-                Lista.Add(new Temperatura(m, d, tM, tm, new Localidad(nM, nL), p));
+                if (tM > tm)
+                {
+                    Lista.Add(new Temperatura(m, d, tM, tm, new Localidad(nM, nL), p));
+                }
+                if (tm > tM)
+                {
+                    MessageBox.Show("Temperatura minima incorrecta", "Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                }
             }
         }
 
         public void Eliminar(int indice, DataGridView datagridview)
         {
-            Lista.RemoveAt(indice);
-            datagridview.Rows.RemoveAt(indice);
+            if (indice < 0)
+            {
+                MessageBox.Show("No hay elementos para borrar");
+            }
+            else
+            {
+                Lista.RemoveAt(indice);
+                datagridview.Rows.RemoveAt(indice);
+            }
         }
-
-        public void PromedioMayor()
-        {
-            
-        }
-
-        public void PromedioMenor()
-        {
-
-        }
-
-  
     }
 }
