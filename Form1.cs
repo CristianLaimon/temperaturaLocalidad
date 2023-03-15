@@ -8,6 +8,7 @@ using System.Security.Cryptography.X509Certificates;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace RegistroDeTemperaturas
 {
@@ -149,12 +150,40 @@ namespace RegistroDeTemperaturas
         {
             if (radioButton1.Checked == true)
             {
-                MessageBox.Show("hola");
+                double menor = (double)dataGridView1.Rows[0].Cells[6].Value;
+                double mayor = (double)dataGridView1.Rows[0].Cells[6].Value;
+
+                for (int d = 0; d < dataGridView1.Rows.Count-1; d++)
+                {
+                    if ((double)(dataGridView1.Rows[d].Cells[6].Value) > mayor)
+                    {
+                        mayor = (double)(dataGridView1.Rows[d].Cells[6].Value);
+                    }
+                    if ((double)(dataGridView1.Rows[d].Cells[6].Value) < menor)
+                    {
+                        menor = (double)(dataGridView1.Rows[d].Cells[6].Value);
+                    }
+                }
+                label7.Text = mayor.ToString();
             }
 
             if (radioButton2.Checked == true)
             {
-                MessageBox.Show("hola");
+                double menor = (double)dataGridView1.Rows[0].Cells[6].Value;
+                double mayor = (double)dataGridView1.Rows[0].Cells[6].Value;
+
+                for (int d = 0; d < dataGridView1.Rows.Count - 1; d++)
+                {
+                    if ((double)(dataGridView1.Rows[d].Cells[6].Value) > mayor)
+                    {
+                        mayor = (double)(dataGridView1.Rows[d].Cells[6].Value);
+                    }
+                    if ((double)(dataGridView1.Rows[d].Cells[6].Value) < menor)
+                    {
+                        menor = (double)(dataGridView1.Rows[d].Cells[6].Value);
+                    }
+                }
+                label8.Text = menor.ToString();
             }
         }
 
