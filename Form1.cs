@@ -153,7 +153,7 @@ namespace RegistroDeTemperaturas
                 double menor = (double)dataGridView1.Rows[0].Cells[6].Value;
                 double mayor = (double)dataGridView1.Rows[0].Cells[6].Value;
 
-                for (int d = 0; d < dataGridView1.Rows.Count-1; d++)
+                for (int d = 0; d < dataGridView1.Rows.Count - 1; d++)
                 {
                     if ((double)(dataGridView1.Rows[d].Cells[6].Value) > mayor)
                     {
@@ -164,7 +164,13 @@ namespace RegistroDeTemperaturas
                         menor = (double)(dataGridView1.Rows[d].Cells[6].Value);
                     }
                 }
-                label7.Text = mayor.ToString();
+                for (int d = 0; d < dataGridView1.Rows.Count - 1; d++)
+                {
+                    if ((double)(dataGridView1.Rows[d].Cells[6].Value) == mayor)
+                    {
+                        label7.Text = dataGridView1.Rows[d].Cells[1].Value.ToString();
+                    }
+                }
             }
 
             if (radioButton2.Checked == true)
@@ -172,7 +178,7 @@ namespace RegistroDeTemperaturas
                 double menor = (double)dataGridView1.Rows[0].Cells[6].Value;
                 double mayor = (double)dataGridView1.Rows[0].Cells[6].Value;
 
-                for (int d = 0; d < dataGridView1.Rows.Count - 1; d++)
+                for (int d = 0; d < dataGridView1.Rows.Count -1; d++)
                 {
                     if ((double)(dataGridView1.Rows[d].Cells[6].Value) > mayor)
                     {
@@ -191,7 +197,7 @@ namespace RegistroDeTemperaturas
         {
             if (radioButton3.Checked == true)
             {
-                MessageBox.Show("hola");
+
             }
 
             if (radioButton4.Checked == true)
