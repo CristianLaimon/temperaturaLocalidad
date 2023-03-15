@@ -47,5 +47,12 @@ namespace RegistroDeTemperaturas
         {
 
         }
+        public void RellenarTablaTesting()
+        {
+            lista.Add(new Temperatura("Enero", 2, 35, 10, new Localidad("Loreto", "Loreto"), 22.5));
+            lista.Add(new Temperatura("Febrero", 10, 20, 1, new Localidad("La Paz", "El Centenario"), 10.5));
+            lista.Add(new Temperatura("Marzo", 12, 10, -10, new Localidad("Comondú", "Ciudad Constitución"), 0));
+            lista.Add(new Temperatura("Diciembre", 15, 15, 3, new Localidad("Loreto", "Loreto"), 9));
+        }
     }
 }
