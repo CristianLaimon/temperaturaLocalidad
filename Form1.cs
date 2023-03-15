@@ -181,7 +181,7 @@ namespace RegistroDeTemperaturas
                 {
                     if ((double)(dataGridView1.Rows[d].Cells[6].Value) == mayor)
                     {
-                        label7.Text = dataGridView1.Rows[d].Cells[1].Value.ToString();
+                        label9.Text = dataGridView1.Rows[d].Cells[1].Value.ToString();
                     }
                 }
             }
@@ -206,7 +206,7 @@ namespace RegistroDeTemperaturas
                 {
                     if ((double)(dataGridView1.Rows[d].Cells[6].Value) == menor)
                     {
-                        label7.Text = dataGridView1.Rows[d].Cells[1].Value.ToString();
+                        label10.Text = dataGridView1.Rows[d].Cells[1].Value.ToString();
                     }
                 }
             }

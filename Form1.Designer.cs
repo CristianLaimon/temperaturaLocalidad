@@ -369,7 +369,7 @@
             this.groupBox3.Controls.Add(this.radioButton4);
             this.groupBox3.Location = new System.Drawing.Point(435, 310);
             this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(133, 91);
+            this.groupBox3.Size = new System.Drawing.Size(278, 91);
             this.groupBox3.TabIndex = 18;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Temp. Localidad";
@@ -416,16 +416,16 @@
             // 
             // groupBox4
             // 
-            this.groupBox4.Location = new System.Drawing.Point(769, 310);
+            this.groupBox4.Location = new System.Drawing.Point(733, 310);
             this.groupBox4.Name = "groupBox4";
-            this.groupBox4.Size = new System.Drawing.Size(200, 100);
+            this.groupBox4.Size = new System.Drawing.Size(200, 91);
             this.groupBox4.TabIndex = 0;
             this.groupBox4.TabStop = false;
             this.groupBox4.Text = "groupBox4";
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(303, 416);
+            this.button3.Location = new System.Drawing.Point(309, 407);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(75, 23);
             this.button3.TabIndex = 2;
@@ -435,7 +435,7 @@
             // 
             // button4
             // 
-            this.button4.Location = new System.Drawing.Point(466, 416);
+            this.button4.Location = new System.Drawing.Point(534, 407);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(75, 23);
             this.button4.TabIndex = 3;
@@ -445,7 +445,7 @@
             // 
             // button5
             // 
-            this.button5.Location = new System.Drawing.Point(858, 416);
+            this.button5.Location = new System.Drawing.Point(807, 407);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(75, 23);
             this.button5.TabIndex = 4;
