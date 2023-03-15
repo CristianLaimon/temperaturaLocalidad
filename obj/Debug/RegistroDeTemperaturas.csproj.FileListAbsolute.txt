@@ -9,3 +9,14 @@ C:\Users\asus\source\repos\RegistroDeTemperaturas\obj\Debug\RegistroDeTemperatur
 C:\Users\asus\source\repos\RegistroDeTemperaturas\obj\Debug\RegistroDeTemperaturas.csproj.CoreCompileInputs.cache
 C:\Users\asus\source\repos\RegistroDeTemperaturas\obj\Debug\RegistroDeTemperaturas.exe
 C:\Users\asus\source\repos\RegistroDeTemperaturas\obj\Debug\RegistroDeTemperaturas.pdb
+C:\Users\itan_\Desktop\temperaturaLocalidad\bin\Debug\RegistroDeTemperaturas.exe.config
+C:\Users\itan_\Desktop\temperaturaLocalidad\bin\Debug\RegistroDeTemperaturas.exe
+C:\Users\itan_\Desktop\temperaturaLocalidad\bin\Debug\RegistroDeTemperaturas.pdb
+C:\Users\itan_\Desktop\temperaturaLocalidad\obj\Debug\RegistroDeTemperaturas.csproj.AssemblyReference.cache
+C:\Users\itan_\Desktop\temperaturaLocalidad\obj\Debug\RegistroDeTemperaturas.csproj.SuggestedBindingRedirects.cache
+C:\Users\itan_\Desktop\temperaturaLocalidad\obj\Debug\RegistroDeTemperaturas.Form1.resources
+C:\Users\itan_\Desktop\temperaturaLocalidad\obj\Debug\RegistroDeTemperaturas.Properties.Resources.resources
+C:\Users\itan_\Desktop\temperaturaLocalidad\obj\Debug\RegistroDeTemperaturas.csproj.GenerateResource.cache
+C:\Users\itan_\Desktop\temperaturaLocalidad\obj\Debug\RegistroDeTemperaturas.csproj.CoreCompileInputs.cache
+C:\Users\itan_\Desktop\temperaturaLocalidad\obj\Debug\RegistroDeTemperaturas.exe
+C:\Users\itan_\Desktop\temperaturaLocalidad\obj\Debug\RegistroDeTemperaturas.pdb

@@ -362,3 +362,14 @@ FodyWeavers.xsd
 *.cache
 .vs/RegistroDeTemperaturas/v17/.suo
 .vs/RegistroDeTemperaturas/v17/.suo
+.vs/RegistroDeTemperaturas/v17/.suo
+bin/Debug/RegistroDeTemperaturas.exe
+bin/Debug/RegistroDeTemperaturas.pdb
+obj/Debug/RegistroDeTemperaturas.pdb
+obj/Debug/RegistroDeTemperaturas.csproj.AssemblyReference.cache
+obj/Debug/RegistroDeTemperaturas.csproj.FileListAbsolute.txt
+obj/Debug/RegistroDeTemperaturas.csproj.GenerateResource.cache
+obj/Debug/RegistroDeTemperaturas.exe
+*.exe
+*.pdb
+*.cache

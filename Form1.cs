@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -17,6 +18,8 @@ namespace RegistroDeTemperaturas
         public Form1()
         {
             InitializeComponent();
+            operaciones.RellenarTablaTesting();
+            operaciones.Mostrar(dataGridView1);
         }
 
         Operaciones operaciones = new Operaciones();
@@ -148,16 +151,31 @@ namespace RegistroDeTemperaturas
 
         private void button3_Click(object sender, EventArgs e)
         {
+            double promedio = 0;
+
             if (radioButton1.Checked == true)
             {
+                for(int k = 0; i < dataGridView1.Rows.Count-1; k++)
+                {
+                    promedio += (double)dataGridView1.Rows[k].Cells[4].Value;
+                }
+                promedio/= dataGridView1.Rows.Count-1;
                 
+                label7.Text = promedio.ToString();
             }
 
             if (radioButton2.Checked == true)
             {
-                
+                for (int k = 0; i < dataGridView1.Rows.Count - 1; k++)
+                {
+                    promedio += (double)dataGridView1.Rows[k].Cells[5].Value;
+                }
+                promedio/= dataGridView1.Rows.Count-1;
+                label8.Text = promedio.ToString();
             }
         }
+
+
 
         private void button4_Click(object sender, EventArgs e)
         {
