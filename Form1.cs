@@ -150,6 +150,19 @@ namespace RegistroDeTemperaturas
         {
             if (radioButton1.Checked == true)
             {
+                
+            }
+
+            if (radioButton2.Checked == true)
+            {
+                
+            }
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            if (radioButton3.Checked == true)
+            {
                 double menor = (double)dataGridView1.Rows[0].Cells[6].Value;
                 double mayor = (double)dataGridView1.Rows[0].Cells[6].Value;
 
@@ -173,12 +186,12 @@ namespace RegistroDeTemperaturas
                 }
             }
 
-            if (radioButton2.Checked == true)
+            if (radioButton4.Checked == true)
             {
                 double menor = (double)dataGridView1.Rows[0].Cells[6].Value;
                 double mayor = (double)dataGridView1.Rows[0].Cells[6].Value;
 
-                for (int d = 0; d < dataGridView1.Rows.Count -1; d++)
+                for (int d = 0; d < dataGridView1.Rows.Count - 1; d++)
                 {
                     if ((double)(dataGridView1.Rows[d].Cells[6].Value) > mayor)
                     {
@@ -189,20 +202,13 @@ namespace RegistroDeTemperaturas
                         menor = (double)(dataGridView1.Rows[d].Cells[6].Value);
                     }
                 }
-                label8.Text = menor.ToString();
-            }
-        }
-
-        private void button4_Click(object sender, EventArgs e)
-        {
-            if (radioButton3.Checked == true)
-            {
-
-            }
-
-            if (radioButton4.Checked == true)
-            {
-                MessageBox.Show("hola");
+                for (int d = 0; d < dataGridView1.Rows.Count - 1; d++)
+                {
+                    if ((double)(dataGridView1.Rows[d].Cells[6].Value) == menor)
+                    {
+                        label7.Text = dataGridView1.Rows[d].Cells[1].Value.ToString();
+                    }
+                }
             }
         }
     }
