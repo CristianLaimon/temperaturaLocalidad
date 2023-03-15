@@ -143,6 +143,8 @@ namespace RegistroDeTemperaturas
 
         private void Form1_Load(object sender, EventArgs e)
         {
+            operaciones.RellenarTablaTesting();
+            label14.Text = "";
             label7.Text = "";
             label8.Text = "";
             label9.Text = "";
@@ -226,6 +228,19 @@ namespace RegistroDeTemperaturas
                     {
                         label10.Text = dataGridView1.Rows[d].Cells[1].Value.ToString();
                     }
+                }
+            }
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            string mes = comboBox4.Text;
+            int dia = (int)numericUpDown1.Value;
+            for (int d = 0; d < dataGridView1.Rows.Count -1; d++)
+            {
+                if (mes == (string)dataGridView1.Rows[d].Cells[2].Value && dia == (int)dataGridView1.Rows[d].Cells[3].Value)
+                {
+                    label14.Text = dataGridView1.Rows[d].Cells[6].Value.ToString();
                 }
             }
         }
