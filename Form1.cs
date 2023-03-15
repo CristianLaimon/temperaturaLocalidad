@@ -245,7 +245,7 @@ namespace RegistroDeTemperaturas
                     }
                 }
             }
-            else if (dia < 0)
+            else
             {
                 MessageBox.Show("Fecha no registrada");
             }
